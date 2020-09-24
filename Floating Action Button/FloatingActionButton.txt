@@ -1,0 +1,34 @@
+
+        fab_add.setOnClickListener {
+
+            onAddButtonClicked()
+
+        }
+        BTN.setOnClickListener {
+             startActivity(Intent(this, NextActivity::class.java))
+        }
+    }
+
+    private fun onAddButtonClicked() {
+        setVisiblity(clicked)
+        setAnimation(clicked)
+        clicked = !clicked
+    }
+
+    private fun setAnimation(clicked: Boolean) {
+        if (!clicked) {
+            createMeet.startAnimation(fabOpen)
+            fab_add.startAnimation(fabRclockW)
+        } else {
+            createMeet.startAnimation(fabClose)
+            fab_add.startAnimation(fabRclockW)
+        }
+    }
+
+    private fun setVisiblity(clicked: Boolean) {
+        if (!clicked) {
+            createMeet.visibility = View.VISIBLE
+        } else {
+            createMeet.visibility = View.INVISIBLE
+        }
+    }
