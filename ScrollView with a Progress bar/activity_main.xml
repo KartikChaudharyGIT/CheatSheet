@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:padding="20dp"
+        android:progressTint="@color/colorAccent" />
+
+    <ScrollView
+        android:id="@+id/sv_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:textAlignment="viewStart">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf loremsknkf "
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
